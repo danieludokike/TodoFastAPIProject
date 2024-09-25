@@ -10,7 +10,11 @@ from pydantic import BaseModel, Field
 
 
 
-router = APIRouter()
+router = APIRouter(
+    prefix="/todos",
+    tags=[""]
+    
+)
 
 
 def get_db():
